@@ -16,6 +16,9 @@ var path = require('path');
 
 var metalsmith = Metalsmith(__dirname);
   metalsmith
+  .metadata({
+    siteurl: process.argv[2] === 'without-preview' ? 'https://sqrthree.github.io/httpstatuses' : '',
+  })
   .source('contents')
   .destination('build')
 
