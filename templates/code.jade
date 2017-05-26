@@ -8,7 +8,7 @@ block description
 
 block banner
   .banner: .container: .row: .twelve.columns
-    p #[a(href='/') &larr; Return to httpstatuses.com]
+    p #[a(href='/') &larr; 返回到 httpstatuses.com]
 
 
 block contents
@@ -18,7 +18,7 @@ block contents
     h1 #[span !{code}] !{title}
     != contents
     if references
-      h1.section #[span !{code}] Code References
+      h1.section #[span !{code}] 状态码参考
       each value, key in references
         p !{key} #[code !{value}]
-    a(href='/') &larr; Return to httpstatuses.com
+    a(href='/') &larr; 返回到 httpstatuses.com

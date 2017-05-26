@@ -1,8 +1,8 @@
 ---
-title: HTTP Status Codes
+title: HTTP 状态码
 layout: index.jade
 ---
 
-# HTTP Status Codes
+# HTTP 状态码
 
-httpstatuses.com is an easy to reference database of HTTP Status Codes with their definitions and helpful code references all in one place. Visit an individual status code via `httpstatuses.com/code` or browse the list below.
+httpstatuses.com 是一个为了方便你参考的 HTTP 状态码数据库，包含了所有的定义和非常有用的状态码参考示例。你可以通过 `httpstatuses.com/code` 来查看一个单独的状态码的相关信息，也可以浏览下面的列表。

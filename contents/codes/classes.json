@@ -1,17 +1,17 @@
 {
   "1": {
-    "title": "1&times;&times; Informational"
+    "title": "1&times;&times; 消息"
   },
   "2": {
-    "title": "2&times;&times; Success"
+    "title": "2&times;&times; 成功"
   },
   "3": {
-    "title": "3&times;&times; Redirection"
+    "title": "3&times;&times; 重定向"
   },
   "4": {
-    "title": "4&times;&times; Client Error"
+    "title": "4&times;&times; 客户端错误"
   },
   "5": {
-    "title": "5&times;&times; Server Error"
+    "title": "5&times;&times; 服务器错误"
   }
 }
