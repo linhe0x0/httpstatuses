@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+  <head>
+    <title>102 处理中 &mdash; httpstatuses.com</title>
+    <link rel="shortcut icon" href="/favicon-2c8f09ecdff4f6b2ee66cc6a3c000019.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/style-e9d18b2504b962e67dedc17a859dea0d.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="description" content="HTTP Status Code 102: 用于通知客户端服务器已接受完整请求但尚未完成的一个临时响应。">
+  </head>
+  <body>
+    <div class="banner">
+      <div class="container">
+        <div class="row">
+          <div class="twelve columns">
+            <p><a href="/">&larr; 返回到 httpstatuses.com</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <article class="code container">
+      <h2>1&times;&times; 消息</h2>
+      <h1><span>102</span> 处理中</h1><p>用于通知客户端服务器已接受完整请求但尚未完成的一个临时响应。</p>
+<p>这个状态码<strong>应该</strong>只有在当服务器有一个合理预期请求需要花费大量时间时被发送。作为指导，如果一个方法需要花费超过 20 秒（一个合理但是可以是任意值）来处理，则服务器<strong>应该</strong>返回一个 102 (处理中)响应。服务器必须在请求完成后发送最终响应。</p>
+<p>方法可能需要很长时间才能处理，特别是支持 Depth header 时。在这种情况下，客户端可能会在等待响应时超时连接。
+为了防止这种情况，服务器可能会返回 102-处理中 的状态码，以向客户端表明服务器仍在处理该方法。</p>
+<hr>
+<ul>
+<li>Source: <a href="http://tools.ietf.org/html/rfc2518#section-10.1">RFC2518 Section 10.1</a></li>
+</ul>
+
+      <h1 class="section"><span>102</span> 状态码参考</h1>
+      <p>Rails HTTP Status Symbol <code>:processing</code></p>
+      <p>Symfony HTTP Status Constant <code>Response::HTTP_PROCESSING</code></p><a href="/">&larr; 返回到 httpstatuses.com</a>
+    </article>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q || []).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-29439846-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>

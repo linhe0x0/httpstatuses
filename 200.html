@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+  <head>
+    <title>200 OK &mdash; httpstatuses.com</title>
+    <link rel="shortcut icon" href="/favicon-2c8f09ecdff4f6b2ee66cc6a3c000019.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/style-e9d18b2504b962e67dedc17a859dea0d.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="description" content="HTTP Status Code 200: 该请求已经成功。">
+  </head>
+  <body>
+    <div class="banner">
+      <div class="container">
+        <div class="row">
+          <div class="twelve columns">
+            <p><a href="/">&larr; 返回到 httpstatuses.com</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <article class="code container">
+      <h2>2&times;&times; 成功</h2>
+      <h1><span>200</span> OK</h1><p>该请求已经成功。</p>
+<p>在 200 响应中发送的有效载荷取决于请求方法。对于本规范定义的方法，有效载荷的预期含义可概括为：</p>
+<ul>
+<li><code>GET</code> 目标资源相对应的实体/表示（representation）;</li>
+<li><code>HEAD</code> 和 <code>GET</code> 相同, 但是没有实体（representation）数据;</li>
+<li><code>POST</code> 从动作中获得的结果或者是状态的表示（representation）;<ul>
+<li><code>PUT</code> <code>DELETE</code> 动作的状态的表示;</li>
+<li><code>OPTIONS</code> 选择通信选项的表示;</li>
+<li><code>TRACE</code> 终端服务器接收到的请求消息的表示。</li>
+</ul>
+</li>
+</ul>
+<p>除了对 CONNECT 的响应外，200 响应始终具有有效载荷。尽管一个原始服务器<strong>或许</strong>会生成一个零长度的有效负载体。如果不需要有效载荷，原始服务器应该发送 <a href="/204">204 无内容</a> 来代替。对于 CONNECT，不允许有效载荷是因为成功的结果是一个在 200 响应头部分之后立即开始的隧道（tunnel）。</p>
+<p>默认情况下，200响应是可缓存的；即除非方法定义时另有说明或有明确的缓存控制<sup><a href="#ref-1">1</a></sup>。</p>
+<hr>
+<ul>
+<li><span id="ref-1"><sup>1</sup> Calculating Heuristic Freshness
+<a href="http://tools.ietf.org/html/rfc7234#section-4.2.2">RFC7234 Section 4.2.2</a></span></li>
+<li>Source: <a href="http://tools.ietf.org/html/rfc7231#section-6.3.1">RFC7231 Section 6.3.1</a></li>
+</ul>
+
+      <h1 class="section"><span>200</span> 状态码参考</h1>
+      <p>Rails HTTP Status Symbol <code>:ok</code></p>
+      <p>Go HTTP Status Constant <code>http.StatusOK</code></p>
+      <p>Symfony HTTP Status Constant <code>Response::HTTP_OK</code></p>
+      <p>Python2 HTTP Status Constant <code>httplib.OK</code></p>
+      <p>Python3+ HTTP Status Constant <code>http.client.OK</code></p>
+      <p>Python3.5+ HTTP Status Constant <code>http.HTTPStatus.OK</code></p><a href="/">&larr; 返回到 httpstatuses.com</a>
+    </article>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q || []).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-29439846-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>

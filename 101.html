@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+  <head>
+    <title>101 切换协议 &mdash; httpstatuses.com</title>
+    <link rel="shortcut icon" href="/favicon-2c8f09ecdff4f6b2ee66cc6a3c000019.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/style-e9d18b2504b962e67dedc17a859dea0d.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="description" content="HTTP Status Code 101: 服务器已经理解并愿意执行客户端的请求，并将通过 Upgrade 请求头字段1来通知客户端在此连接上使用的应用协议的更改。">
+  </head>
+  <body>
+    <div class="banner">
+      <div class="container">
+        <div class="row">
+          <div class="twelve columns">
+            <p><a href="/">&larr; 返回到 httpstatuses.com</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <article class="code container">
+      <h2>1&times;&times; 消息</h2>
+      <h1><span>101</span> 切换协议</h1><p>服务器已经理解并愿意执行客户端的请求，并将通过 Upgrade 请求头字段<sup><a href="#ref-1">1</a></sup>来通知客户端在此连接上使用的应用协议的更改。</p>
+<p>服务器<strong>必须</strong>在响应中生成一个 Upgrade 响应头字段，指明哪个协议在终止 101 响应的空行之后将被立即切换。</p>
+<p>假设服务器只有在有利的情况下才同意切换协议。例如，切换到较新版本的 HTTP 可能比旧版本更有利，并且当传送使用这些特征的资源时，切换到一个实时的、同步的协议可能是有利的。</p>
+<hr>
+<ul>
+<li><span id="ref-1"><sup>1</sup> Upgrade <a href="http://tools.ietf.org/html/rfc7230#section-6.7">RFC7230 Section 6.7</a></span></li>
+<li>Source: <a href="http://tools.ietf.org/html/rfc7231#section-6.2.2">RFC7231 Section 6.2.2</a></li>
+</ul>
+
+      <h1 class="section"><span>101</span> 状态码参考</h1>
+      <p>Rails HTTP Status Symbol <code>:switching_protocols</code></p>
+      <p>Go HTTP Status Constant <code>http.StatusSwitchingProtocols</code></p>
+      <p>Symfony HTTP Status Constant <code>Response::HTTP_SWITCHING_PROTOCOLS</code></p>
+      <p>Python2 HTTP Status Constant <code>httplib.SWITCHING_PROTOCOLS</code></p>
+      <p>Python3+ HTTP Status Constant <code>http.client.SWITCHING_PROTOCOLS</code></p>
+      <p>Python3.5+ HTTP Status Constant <code>http.HTTPStatus.SWITCHING_PROTOCOLS</code></p><a href="/">&larr; 返回到 httpstatuses.com</a>
+    </article>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q || []).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-29439846-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>
