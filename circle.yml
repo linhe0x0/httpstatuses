@@ -8,6 +8,6 @@ dependencies:
 
 deployment:
   production:
-    branch: master
+    branch: zh-Hans
     commands:
-      - ./deploy.sh
+      - node deploy
