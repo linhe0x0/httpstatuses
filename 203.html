@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="zh-cmn-Hans">
   <head>
-    <title>203 Non-authoritative Information &mdash; httpstatuses.com</title>
+    <title>203 非权威信息 &mdash; httpstatuses.com</title>
     <link rel="shortcut icon" href="https://sqrthree.github.io/httpstatuses/favicon-2c8f09ecdff4f6b2ee66cc6a3c000019.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://sqrthree.github.io/httpstatuses/style-e9d18b2504b962e67dedc17a859dea0d.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <meta name="description" content="HTTP Status Code 203: The request was successful but the enclosed payload has been modified from that of the origin server's 200 OK response by a transforming proxy1.">
+    <meta name="description" content="HTTP Status Code 203: 请求已经成功，但所附带的有效载荷已经由转换代理服务器1基于原始服务器的 200 OK 响应修改过。">
   </head>
   <body>
     <div class="banner">
@@ -20,10 +20,10 @@
     </div>
     <article class="code container">
       <h2>2&times;&times; 成功</h2>
-      <h1><span>203</span> Non-authoritative Information</h1><p>The request was successful but the enclosed payload has been modified from that of the origin server&#39;s <a href="/200">200 OK</a> response by a transforming proxy<sup><a href="#ref-1">1</a></sup>.</p>
-<p>This status code allows the proxy to notify recipients when a transformation has been applied, since that knowledge might impact later decisions regarding the content. For example, future cache validation requests for the content might only be applicable along the same request path (through the same proxies).</p>
-<p>The 203 response is similar to the Warning code of 214 Transformation Applied<sup><a href="#ref-2">2</a></sup>, which has the advantage of being applicable to responses with any status code.</p>
-<p>A 203 response is cacheable by default; i.e., unless otherwise indicated by the method definition or explicit cache controls<sup><a href="#ref-3">3</a></sup>.</p>
+      <h1><span>203</span> 非权威信息</h1><p>请求已经成功，但所附带的有效载荷已经由转换代理服务器<sup><a href="#ref-1">1</a></sup>基于原始服务器的 <a href="/200">200 OK</a> 响应修改过。</p>
+<p>该状态码允许代理服务器在发生转换时通知接收方，因为该知识可能会影响相关内容的后续决策。例如，对于内容的未来缓存验证请求可能只能适用于相同的请求路径（通过相同的代理）</p>
+<p>203 响应类似于警告状态码 <a href="">214 发生改变<sup><a href="#ref-2">2</a></sup></a>，其优点是适用于任何状态码的响应。</p>
+<p>默认情况下 203 响应是可缓存的。除非方法定义中另有说明或有明确的缓存控制。</p>
 <hr>
 <ul>
 <li><span id="ref-1"><sup>1</sup> Transformations

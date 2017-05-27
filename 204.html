@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="zh-cmn-Hans">
   <head>
-    <title>204 No Content &mdash; httpstatuses.com</title>
+    <title>204 无内容 &mdash; httpstatuses.com</title>
     <link rel="shortcut icon" href="https://sqrthree.github.io/httpstatuses/favicon-2c8f09ecdff4f6b2ee66cc6a3c000019.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://sqrthree.github.io/httpstatuses/style-e9d18b2504b962e67dedc17a859dea0d.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <meta name="description" content="HTTP Status Code 204: The server has successfully fulfilled the request and that there is no additional content to send in the response payload body.">
+    <meta name="description" content="HTTP Status Code 204: 服务器已经成功处理了请求，并且在响应响应有效载荷体中没有发送其他内容。">
   </head>
   <body>
     <div class="banner">
@@ -20,13 +20,13 @@
     </div>
     <article class="code container">
       <h2>2&times;&times; 成功</h2>
-      <h1><span>204</span> No Content</h1><p>The server has successfully fulfilled the request and that there is no additional content to send in the response payload body.</p>
-<p>Metadata in the response header fields refer to the target resource and its selected representation after the requested action was applied.</p>
-<p>For example, if a 204 status code is received in response to a PUT request and the response contains an ETag header field, then the PUT was successful and the ETag field-value contains the entity-tag for the new representation of that target resource.</p>
-<p>The 204 response allows a server to indicate that the action has been successfully applied to the target resource, while implying that the user agent does not need to traverse away from its current &quot;document view&quot; (if any). The server assumes that the user agent will provide some indication of the success to its user, in accord with its own interface, and apply any new or updated metadata in the response to its active representation.</p>
-<p>For example, a 204 status code is commonly used with document editing interfaces corresponding to a &quot;save&quot; action, such that the document being saved remains available to the user for editing. It is also frequently used with interfaces that expect automated data transfers to be prevalent, such as within distributed version control systems.</p>
-<p>A 204 response is terminated by the first empty line after the header fields because it cannot contain a message body.</p>
-<p>A 204 response is cacheable by default; i.e., unless otherwise indicated by the method definition or explicit cache controls<sup><a href="#ref-1">1</a></sup>.</p>
+      <h1><span>204</span> 无内容</h1><p>服务器已经成功处理了请求，并且在响应响应有效载荷体中没有发送其他内容。</p>
+<p>响应头中的 Metadata 字段在请求的操作完成之后指向目标资源及其选定的表示。</p>
+<p>例如，如果一个 PUT 请求的响应中收到了 204 状态码，并且响应包含 ETag 头字段，那么 PUT 请求即为成功，并且 ETag 字段值包含该目标资源的新表示形式的实体标记。</p>
+<p>204 响应允许服务器指示操作已经成功应用于目标资源，同时意味着用户代理不需要离开当前的“文档视图”（如果有的话）。服务器假设用户代理将根据其自己的接口向其用户提供一些成功的指示，并且在响应其活动表示中应用任何新的或更新的元数据（metadata）。</p>
+<p>例如：204 状态码通常被用于文档编辑界面相应的保存动作上，使得已经保存过的文档仍然可供用户编辑。它也经常用于期望自动化数据传输变的更普遍的接口上，例如在分布式版本控制系统内。</p>
+<p>204 响应由头（header）字段之后的第一个空行终止，因为它不能包含消息体。</p>
+<p>默认情况下 203 响应是可缓存的。即除非方法定义中另有说明或有明确的缓存控制<sup><a href="#ref-1">1</a></sup>。</p>
 <hr>
 <ul>
 <li><span id="ref-1"><sup>1</sup> Calculating Heuristic Freshness
