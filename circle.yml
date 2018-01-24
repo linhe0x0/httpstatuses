@@ -10,4 +10,6 @@ deployment:
   production:
     branch: zh-Hans
     commands:
+      - git config --global user.name "sqrtthree"
+      - git config --global user.email "imsqrtthree@gmail.com"
       - node deploy
